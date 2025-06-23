@@ -1,7 +1,9 @@
 
 <div class="navbar bg-base-100 shadow-sm flex-col sm:flex-row">
     <div class="flex flex-row flex-1 w-full sm:w-auto text-left py-2 sm:py-auto">
-        <a href="{{ route('home') }}" class="btn btn-ghost text-xl">{{ config('app.name', 'Laravel') }}</a>
+        <div class="flex flex-col justify-center w-full sm:w-auto">
+            <a href="{{ route('home') }}" class="btn btn-ghost text-xl">{{ config('app.name', 'Laravel') }}</a>
+        </div>
 
         {{-- Navlinks --}}
         <div class="hidden sm:flex gap-4 ml-4">
