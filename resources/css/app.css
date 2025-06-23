@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@layer utilities {
+    .text-9xl { font-size: 8rem; line-height: 1; }
+}
+
+@theme {
+    --font-sans: 'JetBrains Mono', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@plugin "daisyui" {
+    themes: dark --default, light, retro, cyberpunk, synthwave, coffee, pastel, cupcake, aqua, lofi, wireframe, dracula, lemonade, caramellatte, abyss;
+}
