@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'sentiment_api_url' => [
+        'api_url' => env('SENTIMENT_API_URL', 'https://sentimen-analisis-pertamina-325126223708.us-central1.run.app/api/generate'),
+    ],
 ];
