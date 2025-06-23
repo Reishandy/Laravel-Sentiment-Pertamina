@@ -23,7 +23,7 @@ class PredictController extends Controller
         try {
             // Make API call to sentiment analysis service
             // You can replace the URL with your own API endpoint in the .env, but since this project is specifically for https://github.com/Silvikusuma04/Analisis-Sentimen-Mypertamina it will use the provided URL by default
-            $apiUrl = config('services.sentiment_api_url');
+            $apiUrl = config('services.sentiment.api_url');
             $response = Http::post($apiUrl, [
                 'text' => $input
             ]);
