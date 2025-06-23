@@ -19,7 +19,6 @@
                     </div>
                 </div>
                 <h3 class="font-medium text-lg text-center">Muhammad Akbar Reishandy</h3>
-                <p class="text-sm text-base-content/70 text-center mt-1">Full-Stack Developer</p>
             </div>
 
             <div class="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-sm">
@@ -29,7 +28,6 @@
                     </div>
                 </div>
                 <h3 class="font-medium text-lg text-center">Putri Indah Sari</h3>
-                <p class="text-sm text-base-content/70 text-center mt-1">Data Analyst</p>
             </div>
 
             <div class="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-sm">
@@ -39,7 +37,6 @@
                     </div>
                 </div>
                 <h3 class="font-medium text-lg text-center">Silvi Kusuma Wardhani Gunawan</h3>
-                <p class="text-sm text-base-content/70 text-center mt-1">ML Engineer</p>
             </div>
 
             <div class="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-sm">
@@ -49,7 +46,6 @@
                     </div>
                 </div>
                 <h3 class="font-medium text-lg text-center">Sinta Bethari Ayu Putri</h3>
-                <p class="text-sm text-base-content/70 text-center mt-1">QA and Report</p>
             </div>
         </div>
     </x-card>
