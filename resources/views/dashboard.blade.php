@@ -96,8 +96,8 @@
                                 <span class="badge {{ $badgeClass }} font-medium">{{ $item['prediction'] }}</span>
                             </div>
                             <span class="text-xs text-base-content/60">
-                            {{ \Carbon\Carbon::parse($item['created_at'])->format('M d, Y - H:i') }}
-                        </span>
+                                {{ \Carbon\Carbon::parse($item['created_at'])->format('M d, Y - H:i (T)') }}
+                            </span>
                         </div>
                         <p class="text-sm line-clamp-3">{{ $item['input'] }}</p>
                     </div>
