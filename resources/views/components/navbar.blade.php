@@ -1,5 +1,5 @@
 
-<div class="navbar bg-base-100 shadow-sm flex-col sm:flex-row gap-2 sm:gap-0">
+<div class="navbar bg-base-100 shadow-sm flex-col sm:flex-row">
     <div class="flex flex-row flex-1 w-full sm:w-auto text-left py-2 sm:py-auto">
         <a href="{{ route('home') }}" class="btn btn-ghost text-xl">{{ config('app.name', 'Laravel') }}</a>
 
@@ -11,11 +11,13 @@
     </div>
 
     <div class="flex-none flex justify-between items-center w-full sm:hidden">
-        <div class="flex gap-4 ml-4">
+        <div class="flex gap-4">
             <a href="{{ route('dashboard') }}" class="btn btn-ghost {{ request()->routeIs('dashboard') ? 'btn-active' : '' }}">Dashboard</a>
             <a href="{{ route('about') }}" class="btn btn-ghost {{ request()->routeIs('about') ? 'btn-active' : '' }}">About</a>
         </div>
     </div>
+
+    <div class="divider mb-0 mt-2 sm:hidden"></div>
 
     <div class="flex-none flex justify-between items-center w-full sm:justify-end sm:w-auto">
         {{-- theme selector --}}
