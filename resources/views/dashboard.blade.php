@@ -67,7 +67,7 @@
     <x-card>
         <div class="flex justify-between items-center mb-4">
             <h1 class="text-2xl font-medium text-base-content">History</h1>
-            <span class="text-sm text-base-content/70">{{ count($history ?? []) }} entries</span>
+            <span class="text-sm text-base-content/70">{{ $entries }} entries</span>
         </div>
 
         @if($history->isNotEmpty())

@@ -9,8 +9,11 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/dashboard', function () {
+    $history = auth()->user()->history();
+
     return view('dashboard', [
-        'history' => auth()->user()->history()->latest()->paginate(10),
+        'history' => $history->latest()->paginate(15),
+        'entries' => $history->count(),
     ]);
 })->middleware(['auth'])
     ->name('dashboard');
