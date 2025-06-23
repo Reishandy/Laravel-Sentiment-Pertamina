@@ -62,6 +62,10 @@ This web application serves as a user-friendly interface for the [original senti
    php artisan key:generate
    ```
 
+    Make sure to configure:
+   - Database connection settings
+   - SENTIMENT_API_URL (default is provided, but you can customize if needed)
+
 5. **Run Migrations:**
 
    ```bash
