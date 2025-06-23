@@ -1,15 +1,27 @@
 <?php
 
+use App\Http\Controllers\PredictController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return view('dashboard', [
+        'history' => auth()->user()->history()->latest()->paginate(10),
+    ]);
+})->middleware(['auth'])
+    ->name('dashboard');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::post('/predict', PredictController::class)
+    ->name('predict')
+    ->middleware(['auth']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
