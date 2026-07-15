@@ -3,7 +3,7 @@
 MyPertamina Sentiment Analysis is a web application that helps users analyze the sentiment of text data, particularly reviews from the MyPertamina mobile app. Built with Laravel and AI/ML technologies, it provides an intuitive interface for sentiment prediction.
 
 ## Demo
-You can try a live demo of the kanban app here: [https://mypertamina-sentiment.reishandy.my.id](https://mypertamina-sentiment.reishandy.my.id)
+You can try a live demo of the kanban app here: [https://mypertamina-sentiment.reishandy.id](https://mypertamina-sentiment.reishandy.id)
 
 ## Project Origin
 
